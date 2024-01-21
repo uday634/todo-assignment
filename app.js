@@ -14,12 +14,8 @@ app.use(cors())
 app.use('/user', auth);
 app.use('/list',list);
 
-app.get('/', (req, res) => {
-    app.use(express.static(path.resolve(__dirname, 'frontend', 'build')));
-    res.sendFile(path.resolve(__dirname, "frontend", "build", 'index.html'));
-})
 
-app.listen(3001, () => {
+app.listen(3001, () => { 
     console.log("Server Started");
 });
  

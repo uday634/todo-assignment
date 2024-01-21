@@ -22,7 +22,7 @@ const Update = (props) => {
 
   const submit = async () => {
     try {
-      const response = await axios.post(`${window.location.origin}/list/updateTask/${props.update._id}`, Inputs);
+      const response = await axios.post(`http://localhost:3001/list/updateTask/${props.update._id}`, Inputs);
       console.log(response)
       toast.success('Updated successfully')
       if (response.status === 200) {

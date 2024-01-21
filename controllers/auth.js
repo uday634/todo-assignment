@@ -45,5 +45,6 @@ exports.signIn = async (req, res) => {
     res.status(200).json({ message: userWithoutPassword });
   } catch (err) {
     res.status(200).json({ message: "User Not Found" });
+    return;
   }  
 }; 

@@ -19,7 +19,7 @@ const SignIn = () => {
   const submit = async (e) => {
     e.preventDefault();
     await axios
-      .post(`${window.location.origin}/user/signIn`, Inputs)
+      .post(`http://localhost:3001/user/signIn`, Inputs)
       .then((response) => {
         sessionStorage.setItem("id", response.data.message._id);
         dispacth(authActions.login())

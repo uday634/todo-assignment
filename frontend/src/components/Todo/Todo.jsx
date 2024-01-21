@@ -16,7 +16,7 @@ const Todo = () => {
   const del = async (Cardid) => {
     if(id){
       await axios
-      .delete(`${window.location.origin}/list//deleteTask/${Cardid}`, {
+      .delete(`http://localhost:3001/list/deleteTask/${Cardid}`, {
         data: { id: id },
       })
       .then((response) => {
@@ -49,7 +49,7 @@ const Todo = () => {
     } else {
       if (id) {
         await axios
-          .post(`${window.location.origin}/list/addTask`, {
+          .post(`http://localhost:3001/list/addTask`, {
             title: Inputs.title,
             body: Inputs.body,
             id: id,
@@ -80,7 +80,7 @@ const Todo = () => {
     if(id){
       const fetch = async () => {
       await axios
-        .get(`${window.location.origin}/list/getTasks/${id}`)
+        .get(`http://localhost:3001/list/getTasks/${id}`)
         .then((response) => {
           setArray(response.data.list);
         });
