@@ -1,0 +1,47 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 10px 20px; /* Add padding for better spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    background: transparent;
+    border-radius: 9px;
+    margin: 0 20px;
+    color: white;
+    background-color: #e9775d;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .navbar-brand {
+    color: #333;
+    font-size: 24px; /* Increase font size for the logo */
+    font-weight: bold; /* Make the logo text bold */
+  }
+  
+  .navbar-toggler-icon {
+    border-color: #333;
+  }
+  
+  .navbar-nav {
+    margin-left: auto; /* Push the navigation links to the right */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333;
+    margin-right: 20px; /* Add right margin between links for spacing */
+  }
+  
+  .user-png {
+    max-width: 30px;
+    border-radius: 50%;
+  }
+
+  .btn-nav{
+    background-color:#ee5937;
+    border-radius: 5px;
+    color: white !important;
+    margin: 2px 0;
+    text-align: center;
+    font-weight: bold;
+  }
+  

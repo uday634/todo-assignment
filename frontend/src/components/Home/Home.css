@@ -1,0 +1,18 @@
+
+.home-img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.home-title{
+    font-size: 80px;
+    color: #e9775d;
+}
+.home-btn{
+    background-color:#e9775d ;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
